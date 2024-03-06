@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+  overflow: hidden;
+background-color: black !important;
+}
+
+#overlay-content {
+  position: absolute;
+  left: calc(50% - 7rem);
+  /* Comment display none for dom overlay to work */
+  /* display: none; */
+}
+
+#container {
+  width: 14rem;
+  color: white;
+  margin: 2rem auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  width: 100%;
+  height: 60%;
+}
+img:hover {
+  opacity: 0.5;
+  border:  2px solid blueviolet;
+}
+
+.mb12 {
+  margin-bottom: -130px;
+}
