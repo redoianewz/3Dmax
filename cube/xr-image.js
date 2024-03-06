@@ -18,17 +18,24 @@ let selectInput = document.getElementById("model-select");
 let imageName = selectInput.value;
 let selectedImage = null;
 
+console.log("selectInput0", imageName);
+
 function handleClick(id, alt) {
   console.log("id 2", id);
-
   const optionElement = document.createElement("option");
   optionElement.value = id;
   optionElement.text = alt;
 
   selectInput.add(optionElement);
 
-  selectInput.value = id;
+  imageName = id;
+  console.log("imageName", imageName);
 }
+
+document.addEventListener('click',()=>{
+    console.log("imageName1", imageName);
+});
+
 imagesArray.forEach((imageData) => {
   const { src, alt, id } = imageData;
   const colDiv = document.createElement("div");
@@ -149,6 +156,7 @@ function onSelect() {
     }
   }
 }
+console.log("imageName1222", imageName);
 
 let pinchStartDistance = 0;
 let isPinching = false;
