@@ -75,22 +75,12 @@ selectInput.addEventListener("change", (e) => {
 const imageLoader = new THREE.TextureLoader();
 
 // Load images
-imageLoader.load("/images/chair.png", (texture) => onLoad(texture, "chair"));
-imageLoader.load("/images/bookcase.png", (texture) =>
-  onLoad(texture, "bookcase")
-);
-imageLoader.load("/images/bookcase1.png", (texture) =>
-  onLoad(texture, "bookcase1")
-);
-imageLoader.load("/images/desk.png", (texture) => onLoad(texture, "desk"));
-imageLoader.load("/images/bed.png", (texture) => onLoad(texture, "bed"));
-imageLoader.load("/images/chiarGame.png", (texture) =>
-  onLoad(texture, "chiarGame")
-);
 imageLoader.load("/images/carpet.png", (texture) => onLoad(texture, "carpet"));
-imageLoader.load("/images/carpet1.png", (texture) =>
-  onLoad(texture, "carpet1")
-);
+imageLoader.load("/images/carpet1.png", (texture) =>onLoad(texture, "carpet1"));
+imageLoader.load("/images/carpet2.jpg", (texture) =>onLoad(texture, "carpet2"));
+imageLoader.load("/images/carpet3.jpg", (texture) =>onLoad(texture, "carpet3"));
+imageLoader.load("/images/carpet4.jpg", (texture) =>onLoad(texture, "carpet4"));
+imageLoader.load("/images/carpet5.jpg", (texture) =>onLoad(texture, "carpet5"));
 
 function onLoad(texture, name) {
   loadedImages[name] = texture;
